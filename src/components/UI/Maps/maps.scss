@@ -1,0 +1,57 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.maps {
+  width: 100%;
+  &__wrapper {
+    width: 1100px;
+    margin: auto;
+  }
+  &__form {
+    margin-top: 150px;
+  }
+  &__control {
+    width: 500px;
+    margin-bottom: 50px !important;
+  }
+  &__title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &__inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  &__map {
+    border-radius: 20px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .maps {
+    margin: 50px 0 0 0;
+    &__wrapper {
+      width: 90%;
+    }
+
+    &__control {
+      width: 100%;
+    }
+    &__inputs {
+      gap: 20px;
+    }
+    &__title {
+      font-size: 1.5rem;
+      width: 100%;
+    }
+  }
+}
